@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+    
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 26px;
+    padding-top: 30px;
+    text-align: start;
+    padding-right: 205px;
+}
+
+.form_container {
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 880px;
+    scale: 0.85;
+}
+
+.form_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.left_form, .right_form {
+    min-height: 500px;
+    flex: 1;
+}
+
+.left_form {
+    background-color: #272a34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    text-align: start;
+}
+
+.right_form {
+    background-color: #1c1e25;
+    border-radius: 0 20px 20px 0;
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+.temp_right{
+    padding: 55px;
+    text-align: start;
+    gap: 1rem;
+}
+.left_form textarea{
+    height: 100px;
+    resize: vertical;
+}
+.custom_input , .left_form textarea {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 1px solid #52555d;
+}
+
+.left_form textarea{
+    height: 60px;
+    resize: vertical;
+}
+
+#contact_head {
+    font-weight: 400;
+    font-size: 18px;  
+    padding: 10px 0px;
+}
+.contact_head_info{
+    color: #666666;
+    padding-bottom:20px;
+}
+.contact_info {
+    color: #666666;
+    padding-bottom:20px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+#contact_head, #contact_info {
+    text-align: start;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.white_text{
+    color: white;
+    padding-left: 3px ;
+}
+.genders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom:10px;
+    padding-top: 5px;
+}
+
+.custom_input_container {
+    margin-bottom: 20px;
+}
+
+.custom_radio_container input {
+    display: none;
+}
+
+.custom_radio_container input + label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #52555d;
+    color: white;
+    margin-right: 10px;
+}
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.input-wrapper label {
+    margin-right: 10px; 
+}
+.city_input{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin: 3px 0;
+    background: rgba(0, 0, 0, 0);
+    color: #666666;
+    border: 0;
+    border-bottom: 1px solid #52555d;
+}
+
+
+.custom_radio_container input:checked + label {
+    background-color: #1c1e25;
+}
+
+#submit_btn{
+    padding: 10px 30px;
+    background-color: #e79743;
+    color: white ;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+}
+.submission{
+    display: flex;
+    height: 40px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+#date::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+}
+input, textarea{
+    color: white;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    text-align: start;
+  }
+.icon{
+    height: 20px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background-color: #0056b3;
+  }
+  
