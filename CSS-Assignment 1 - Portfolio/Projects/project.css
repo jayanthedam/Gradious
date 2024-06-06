@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+  width: 100vw;
+  background-color: #f3f3f3; /* Change body background color */
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141111;
+  color: white;
+  border-bottom: 2px solid #000; /* Add border bottom */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align items to center */
+  padding: 1rem;
+}
+
+.logo img {
+  height: 35px;
+  border-radius: 50%; /* Make logo image rounded */
+}
+
+.menu ul li {
+  font-size: large;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 1rem;
+  font-size: medium;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(90vh - 10vh - 20px);
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  min-height: 180px;
+  width: 95vw;
+  max-width: 1200px;
+  border: 2px solid #000; /* Change border color */
+  background-color: #fff; /* Change card background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  flex-grow: 1; /* Grow to fill available space */
+}
+
+.card_text h2 {
+  padding-bottom: 0.5rem; /* Reduce heading bottom padding */
+  color: #333; /* Change heading color */
+}
+
+.card_text h4 {
+  font-weight: 500;
+  color: #666; /* Change text color */
+}
+
+.card_text a {
+  color: #007bff; /* Change link color */
+  text-decoration: none;
+}
+
+footer {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #271a1a;
+  color: white;
+  padding-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li img {
+  height: 25px;
+}
+
+p {
+  text-align: center;
+}

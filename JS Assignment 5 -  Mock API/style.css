@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  overflow-x: hidden;
+}
+#heading{
+text-align: center;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;  
+  
+}
+#add_input{
+  display: none;
+  flex-direction: column;
+}
+
+.input_add{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table_wrapper {
+  margin: 50px 0px;
+}
+
+.table_ctn {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  min-width: 700px;
+  min-height: 50px;
+}
+
+.row_container {
+  display: contents;
+  
+}
+
+.rows, .heading {
+  height: 50px;
+  min-width: 100px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  border: 0.3px solid rgb(162, 160, 160);
+}
+
+.heading {
+  color: black;
+  font-weight: bold; 
+}
+
+.rows {
+  background-color: white;
+}
+
+.alternate_rows {
+  background-color: #f5f5f5;   
+}
+
+.Delete_button,.Update_button, .save_button{
+padding: 6px;
+margin: 3px;
+border: 0px;
+border-radius: 3px;
+color: white;
+}
+.Delete_button{
+ background-color: #dc3545;
+}
+
+.Update_button,.save_button{
+  background-color: #17a2b8;
+}
+#addUser_btn,#saveUser_btn{
+  padding: 15px;
+  background-color: #007bff;
+  border: 0px;
+  border-radius: 3px;
+  color: white;
+}
+.id_class{
+  display: none;
+}
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+
