@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "8865272b-57b0-41a5-9248-01a8d58623f5",
+		"name": "Assignment 6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27168529"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/payments/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"customer_id\": 6,\r\n    \"amount\": \"50000\",\r\n    \"payment_date\": \"2024-09-02T00:00:00.000Z\",\r\n    \"payment_method\": \"PayPal\",\r\n    \"status\": \"Completed\",\r\n    \"invoice_number\": \"INV1003\",\r\n    \"transaction_id\": \"TXN1003\",\r\n    \"card_type\": null,\r\n    \"card_number\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/payments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/payments/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"customer_id\": 6,\r\n    \"amount\": \"50000\",\r\n    \"payment_date\": \"2024-09-02T00:00:00.000Z\",\r\n    \"payment_method\": \"PayPal\",\r\n    \"status\": \"Completed\",\r\n    \"invoice_number\": \"INV1003\",\r\n    \"transaction_id\": \"TXN1003\",\r\n    \"card_type\": null,\r\n    \"card_number\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/payments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/payments/3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"customer_id\": 6,\r\n    \"amount\": \"70000\",\r\n    \"payment_date\": \"2024-09-02T00:00:00.000Z\",\r\n    \"payment_method\": \"PayPal\",\r\n    \"status\": \"Completed\",\r\n    \"invoice_number\": \"INV1003\",\r\n    \"transaction_id\": \"TXN1003\",\r\n    \"card_type\": null,\r\n    \"card_number\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/payments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"payments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

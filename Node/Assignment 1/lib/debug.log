@@ -1,0 +1,9 @@
+[INFO] Starting the application...
+[INFO] Application started successfully.
+[ERROR] Failed to connect to the database.
+[DEBUG] Retrying connection in 5 seconds...
+[INFO] Connection established.
+[WARN] Low disk space on server.
+[INFO] Scheduled maintenance at 02:00 AM.
+[DEBUG] Maintenance script executed.
+[ERROR] Unexpected error occurred during the maintenance.

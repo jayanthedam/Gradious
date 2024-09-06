@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; }
+        #uploadForm { display: flex; flex-direction: column; max-width: 400px; margin: 0 auto; }
+        #fileInput { margin-bottom: 10px; }
+        #uploadBtn { padding: 10px 15px; cursor: pointer; }
+        #fileLink { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Upload a File</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit" id="uploadBtn">Upload</button>
+    </form>
+    <div id="fileLink"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const fileInput = document.getElementById('fileInput');
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                
+                if (data.fileUrl) {
+                    document.getElementById('fileLink').innerHTML = `<a href="${data.fileUrl}" download>Download your file</a>`;
+                } else { 
+                    alert('File upload failed');
+                }
+            } catch (error) {
+                alert('An error occurred during the file upload.');
+            }
+        });
+    </script>
+</body>
+</html>
